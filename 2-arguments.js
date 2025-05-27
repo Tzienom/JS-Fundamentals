@@ -4,6 +4,4 @@ function arguments(...args) {
   else console.log("Arguments found");
 }
 
-arguments("Argumment", "Another Argument", "A third Argument");
-arguments("Argument");
 arguments();
