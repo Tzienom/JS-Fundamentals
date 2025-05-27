@@ -1,9 +1,13 @@
-function toInteger(...args) {
-  for (let [index, int] of args.entries()) {
-    if (index === 0 && Number(int)) return `My number: ${int}`;
-    else return "Not a number";
+function toInteger() {
+  let args = process.argv.slice(2);
+
+  for (let [index, arg] of args.entries()) {
+    if (Number(arg)) {
+      if (index === 0) console.log(Math.floor(arg));
+    }
   }
+
+  if (!Number(...args[0])) console.log("Not a number");
 }
 
-console.log(toInteger("4", "5sdf"));
-console.log(toInteger("3ds"));
+toInteger();
