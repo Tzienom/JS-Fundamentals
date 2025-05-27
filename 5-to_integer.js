@@ -3,7 +3,7 @@ function toInteger() {
 
   for (let [index, arg] of args.entries()) {
     if (Number(arg)) {
-      if (index === 0) console.log(Math.floor(arg));
+      if (index === 0) console.log(`My number: ${Math.floor(arg)}`);
     }
   }
 
