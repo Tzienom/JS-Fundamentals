@@ -5,12 +5,12 @@ function square() {
     let line = "";
 
     for (let j = 0; j < args; j++) {
-      line += "x";
+      line += "X";
     }
     console.log(line);
   }
 
-  if (!args.length) console.log("Missing size");
+  if (!Number(args)) console.log("Missing size");
 }
 
 square();
